@@ -31,7 +31,7 @@ export default function Home() {
 
           <a href="https://sturion.github.io/Pokedex/" className="card" target="_blank">
             <h3>Pokedex &rarr;</h3>
-            <img src="/vercel.svg"></img>
+            <img src="/pokebola.png" className="imageCard"></img>
             <p>Projeto de pokedex com HTML/CSS/JS com slider infinito usando API</p>
           </a>
 
@@ -41,7 +41,7 @@ export default function Home() {
             target="_blank"
           >
             <h3>Calculadora Resistores &rarr;</h3>
-            <img src="/vercel.svg"></img>
+            <img src="/resistor.svg" className="imageCard"></img>
             <p>Retorna o valor de um resistor ao escolher suas cores.</p>
           </a>
 
@@ -150,6 +150,10 @@ export default function Home() {
           height: 40px;
         }
 
+        .imageCard {
+          height: 100px;
+          align-items: center;
+        }
 
         code {
           background: #fafafa;
@@ -174,7 +178,7 @@ export default function Home() {
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
-          text-align: left;
+          text-align: center;
           color: inherit;
           text-decoration: none;
           border: 1px solid #eaeaea;
