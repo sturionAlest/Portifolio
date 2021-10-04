@@ -4,59 +4,62 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Douglas Sturion</title>
+        <link rel="icon" href="/logo.ico" />
       </Head>
 
       <main>
+        <div className="titleDiv">
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <div className="test">
+        <img src="/logo.svg" className="logo" id="logoTitle"></img> 
+         ouglas</div><span className="break-mobile">Sturion</span>
         </h1>
+        </div>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          <a href="https://www.linkedin.com/in/sturion/"><img src="/linkedin.svg" className="social"></img></a>
+          <a href="https://github.com/sturion"><img src="/github.svg" className="social"></img></a>
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="https://sturion.github.io/CovidPiracicaba/" className="card">
+            <h3>Simulador COVID-19 &rarr;</h3>
+            <img src="/vercel.svg"></img>
+            <p>Website que mostra previsão de casos de covid até 10 dias na cidade de Piracicaba.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="https://sturion.github.io/Pokedex/" className="card">
+            <h3>Pokedex &rarr;</h3>
+            <img src="/vercel.svg"></img>
+            <p>Projeto de pokedex com HTML/CSS/JS com slider infinito usando API</p>
           </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className="card"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3>Calculadora Resistores &rarr;</h3>
+            <img src="/vercel.svg"></img>
+            <p>Retorna o valor de um resistor ao escolher suas cores.</p>
           </a>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
       </main>
 
       <footer>
+      Powered by
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          
           <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
+        Social Network icon by:
+        <a href="https://www.iconfinder.com/milan.kohut">Milan Kohut</a>
+        
       </footer>
 
       <style jsx>{`
@@ -89,12 +92,14 @@ export default function Home() {
 
         footer img {
           margin-left: 0.5rem;
+          padding-right: 20px;
         }
 
         footer a {
           display: flex;
           justify-content: center;
           align-items: center;
+          color: #0070f3;
         }
 
         a {
@@ -117,6 +122,17 @@ export default function Home() {
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
+          margin-left: -12px;
+          display: flex;
+        }
+
+        .titleDiv{
+          display: flex;
+        }
+
+        .test {
+          display: flex;
+          padding-right: 1rem;
         }
 
         .title,
@@ -127,6 +143,10 @@ export default function Home() {
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
+        }
+        
+        .social {
+          height: 40px;
         }
 
         code {
@@ -180,6 +200,18 @@ export default function Home() {
 
         .logo {
           height: 1em;
+        }
+
+        #logoTitle {
+          height 70px;
+          margin-top: 6px;
+          margin-right: -13px;
+        }
+
+        @media (max-width: 500px){
+          .title{
+            display: inline-block;
+          }
         }
 
         @media (max-width: 600px) {
