@@ -18,26 +18,27 @@ export default function Home() {
         </div>
 
         <p className="description">
-          <a href="https://www.linkedin.com/in/sturion/"><img src="/linkedin.svg" className="social"></img></a>
-          <a href="https://github.com/sturion"><img src="/github.svg" className="social"></img></a>
+          <a href="https://www.linkedin.com/in/sturion/" target="_blank"><img src="/linkedin.svg" className="social" ></img></a>
+          <a href="https://github.com/sturion"  target="_blank"><img src="/github.svg" className="social"></img></a>
         </p>
 
         <div className="grid">
-          <a href="https://sturion.github.io/CovidPiracicaba/" className="card">
+          <a href="https://sturion.github.io/CovidPiracicaba/" className="card" target="_blank">
             <h3>Simulador COVID-19 &rarr;</h3>
-            <img src="/vercel.svg"></img>
+            <img src="/covid.svg" className="imageCard"></img>
             <p>Website que mostra previsão de casos de covid até 10 dias na cidade de Piracicaba.</p>
           </a>
 
-          <a href="https://sturion.github.io/Pokedex/" className="card">
+          <a href="https://sturion.github.io/Pokedex/" className="card" target="_blank">
             <h3>Pokedex &rarr;</h3>
             <img src="/vercel.svg"></img>
             <p>Projeto de pokedex com HTML/CSS/JS com slider infinito usando API</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://sturion.github.io/ResistorCodeCalculator/"
             className="card"
+            target="_blank"
           >
             <h3>Calculadora Resistores &rarr;</h3>
             <img src="/vercel.svg"></img>
@@ -57,8 +58,8 @@ export default function Home() {
           
           <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
-        Social Network icon by:
-        <a href="https://www.iconfinder.com/milan.kohut">Milan Kohut</a>
+        Social Network icon byd:
+        <a href="https://www.iconfinder.com/milan.kohut" target="_blank">Milan Kohut</a>
         
       </footer>
 
@@ -148,6 +149,7 @@ export default function Home() {
         .social {
           height: 40px;
         }
+
 
         code {
           background: #fafafa;
