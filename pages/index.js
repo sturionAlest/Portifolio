@@ -55,12 +55,13 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          
           <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
-        Social Network icon byd:
+        <div>
+        Social Network icon by:
         <a href="https://www.iconfinder.com/milan.kohut" target="_blank">Milan Kohut</a>
-        
+        </div>
+
       </footer>
 
       <style jsx>{`
@@ -217,6 +218,15 @@ export default function Home() {
         @media (max-width: 500px){
           .title{
             display: inline-block;
+          }
+        }
+
+        @media (max-width: 470px){
+          footer{
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
           }
         }
 
